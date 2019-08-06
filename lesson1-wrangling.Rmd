@@ -35,7 +35,16 @@ In this lesson we'll:
 
 [MovieLens](https://grouplens.org/datasets/movielens/) is a great resource for data on movie ratings. The full dataset has ratings on 40 000 movies by 260 000 users, some 24 million ratings in all. We'll use a smaller dataset with ratings of 9 000 movies by 700 users (100 000 ratings in all). 
 
-Download the file "ml-latest-small.zip" from https://grouplens.org/datasets/movielens/ and unzip it to the *data* directory in your main project folder (make a folder called *data* if you haven't already). You should see four csv files: `links.csv`, `movies.csv`, `ratings.csv`, and `tags.csv`. You can also do this programmatically in R:
+If running in Google Colab you can import this data directly:
+```{r}
+library(readr)
+movies <- read_csv(url("https://raw.githubusercontent.com/iandurbach/data-scifi-short/master/data/ml-latest-small/movies.csv"))  # movie info: title and genre
+ratings <- read.csv(url("https://raw.githubusercontent.com/iandurbach/data-scifi-short/master/data/ml-latest-small/ratings.csv")) # user ratings for each movie
+tags <- read.csv(url("https://raw.githubusercontent.com/iandurbach/data-scifi-short/master/data/ml-latest-small/tags.csv")) # additional user reviews ("tag")
+links <- read.csv(url("https://raw.githubusercontent.com/iandurbach/data-scifi-short/master/data/ml-latest-small/links.csv")) # lookup for imdb movie IDs
+```
+
+If you are working on your own machine, download the file "ml-latest-small.zip" from https://grouplens.org/datasets/movielens/ and unzip it to the *data* directory in your main project folder (make a folder called *data* if you haven't already). You should see four csv files: `links.csv`, `movies.csv`, `ratings.csv`, and `tags.csv`. You can also do this programmatically in R:
 
 ```{r}
 dir.create("data")
@@ -65,12 +74,14 @@ load("data/movielens-small.RData")
 
 You'll only need to do the above part once, so once you've got the data saved as .RData, start running the notebook from here.
 
-## Loading the tidyverse
+## Loading packages
 
-Load the **tidyverse** collection of packages, which loads the following packages: **ggplot2**, **tibble**, **tidyr**, **readr**, **purrr**, and **dplyr**.
+Load the packages we need
 
 ```{r}
-library(tidyverse)
+library(dplyr)
+library(tibble)
+library(tidyr)
 ```
 
 Load the MovieLens data

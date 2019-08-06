@@ -329,7 +329,6 @@ output:
 ---   
 ```
 
-GitHub also renders R Markdown files nicely, but won't run the code blocks. So most of the time you'd still want to push the .md file as well.
 
 Let's summarize all of this with a quick example:
 
