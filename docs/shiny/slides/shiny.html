@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Getting to know Shiny</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jon Calder" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Getting to know Shiny
+### Jon Calder
+### 2019/08
+
+---
+
+
+
+
+background-image: url(img/libryo_logo.png)
+background-size: 100%
+
+---
+
+background-image: url(img/exercism.png)
+background-size: cover
+
+---
+
+background-image: url(img/rweekly.png)
+background-size: cover
+
+---
+class: inverse, middle, center
+
+# Shiny - Overview
+
+---
+class: center
+
+### Shiny Examples
+
+.pull-left[
+![](img/superzip-example.png)
+![](img/google-charts.png)
+]
+
+.pull-right[
+![](img/bus-dashboard.png)
+![](img/movie-explorer.png)
+]
+
+---
+
+# Inputs
+
+![](img/shiny_inputs.png)
+
+---
+
+# Inputs
+
+![](img/input_syntax.png)
+
+---
+
+# Outputs
+
+![](img/shiny_outputs.png)
+
+---
+
+# Outputs
+
+![](img/output_syntax.png)
+
+---
+
+# Outputs
+
+![](img/render_outputs.png)
+
+---
+
+# Outputs
+
+![](img/render_output_syntax.png)
+
+---
+
+# Outputs
+
+![](img/basic_reactivity.png)
+
+---
+background-image: url(img/shiny-dev-center.png)
+background-position: 90% 10%
+background-size: 500px
+
+# Learn More
+
+
+## Resources
+
+[Shiny website](https://shiny.rstudio.com/)
+
+[flexdashboard](http://rmarkdown.rstudio.com/flexdashboard/) / [shinydashboard](https://rstudio.github.io/shinydashboard/)
+
+[Show Me Shiny](https://www.showmeshiny.com/)
+
+[Shiny User Showcase](https://www.rstudio.com/products/shiny/shiny-user-showcase/)
+
+[Awesome Shiny Apps for Statistics](http://asas.yingjiehu.com/)
+
+[HTML Widgets](http://www.htmlwidgets.org)
+
+???
+
+Recently updated - the go-to place for documentation, examples and articles
+Frameworks for styling and extending shiny apps
+Gallery of examples to explore what's possible
+
+---
+class: center, middle
+
+# Thank you!
+
+Feel free to get in touch :-)
+
+.pull-left[
+&lt;img src="https://image.flaticon.com/icons/svg/12/12195.svg" style="width: 25px;"/&gt;
+[www.joncalder.co.za](http://joncalder.co.za)
+
+&lt;img src="https://image.flaticon.com/icons/svg/34/34400.svg" style="width: 25px;"/&gt;
+[jonmcalder@gmail.com]("mailto:jonmcalder@gmail.com")
+]
+
+.pull-right[
+&lt;img src="https://image.flaticon.com/icons/svg/25/25231.svg" style="width: 25px;"/&gt;
+[@jonmcalder](http://github.com/jonmcalder)
+
+&lt;img src="https://image.flaticon.com/icons/png/512/8/8800.png" style="width: 25px;"/&gt;
+[@jonmcalder](http://twitter.com/jonmcalder)
+]
+
+&lt;br&gt;
+&lt;br&gt;
+
+Slides created with [**xaringan**](https://github.com/yihui/xaringan), leveraging [xaringanthemer](https://pkg.garrickadenbuie.com/xaringanthemer/), [remark.js](https://remarkjs.com), [knitr](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": ""
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

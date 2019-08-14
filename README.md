@@ -46,7 +46,7 @@ The following is the intended lecture schedule.
 |        |               | Computer vision / image classification |   |
 |    |  | Sentiment analysis                 | tidytext | TMR-ch2
 |    |  | Best practices  |   |
-|6       | Communication | Make your own R package | devtools, roxygen2, knitr, testthat  |
+|6       | Communication | Make your own R package | devtools, usethis, roxygen2, knitr, testthat  |
 |      | Communication | Make your own Shiny app             | shiny
 
 R4DS = R for Data Science (2017) Hadley Wickham and Garrett Grolemund (available at http://r4ds.had.co.nz/)
