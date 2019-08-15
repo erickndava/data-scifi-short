@@ -1,0 +1,162 @@
+---
+title: "Getting to know Shiny"
+subtitle: ""
+author: "Jon Calder"
+date: "2019/08"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css"]
+    lib_dir: libs
+    yolo: FALSE
+    chakra: libs/remark-latest.min.js
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: ""
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(xaringanthemer)
+mono_accent(
+  base_color = "#45a8ba",
+  link_color = "#e05773",
+  black_color = "#1a2433",
+  header_font_google = google_font("Roboto"),
+  text_font_google   = google_font("Roboto Condensed", "400", "400i"),
+  code_font_google   = google_font("Roboto Mono"),
+  text_font_size = "22px"
+)
+```
+
+background-image: url(img/libryo_logo.png)
+background-size: 100%
+
+---
+
+background-image: url(img/exercism.png)
+background-size: cover
+
+---
+
+background-image: url(img/rweekly.png)
+background-size: cover
+
+---
+class: inverse, middle, center
+
+# Shiny - Overview
+
+---
+class: center
+
+### Shiny Examples
+
+.pull-left[
+![](img/superzip-example.png)
+![](img/google-charts.png)
+]
+
+.pull-right[
+![](img/bus-dashboard.png)
+![](img/movie-explorer.png)
+]
+
+---
+
+# Inputs
+
+![](img/shiny_inputs.png)
+
+---
+
+# Inputs
+
+![](img/input_syntax.png)
+
+---
+
+# Outputs
+
+![](img/shiny_outputs.png)
+
+---
+
+# Outputs
+
+![](img/output_syntax.png)
+
+---
+
+# Outputs
+
+![](img/render_outputs.png)
+
+---
+
+# Outputs
+
+![](img/render_output_syntax.png)
+
+---
+
+# Outputs
+
+![](img/basic_reactivity.png)
+
+---
+background-image: url(img/shiny-dev-center.png)
+background-position: 90% 10%
+background-size: 500px
+
+# Learn More
+
+
+## Resources
+
+[Shiny website](https://shiny.rstudio.com/)
+
+[flexdashboard](http://rmarkdown.rstudio.com/flexdashboard/) / [shinydashboard](https://rstudio.github.io/shinydashboard/)
+
+[Show Me Shiny](https://www.showmeshiny.com/)
+
+[Shiny User Showcase](https://www.rstudio.com/products/shiny/shiny-user-showcase/)
+
+[Awesome Shiny Apps for Statistics](http://asas.yingjiehu.com/)
+
+[HTML Widgets](http://www.htmlwidgets.org)
+
+???
+
+Recently updated - the go-to place for documentation, examples and articles
+Frameworks for styling and extending shiny apps
+Gallery of examples to explore what's possible
+
+---
+class: center, middle
+
+# Thank you!
+
+Feel free to get in touch :-)
+
+.pull-left[
+<img src="https://image.flaticon.com/icons/svg/12/12195.svg" style="width: 25px;"/>
+[www.joncalder.co.za](http://joncalder.co.za)
+
+<img src="https://image.flaticon.com/icons/svg/34/34400.svg" style="width: 25px;"/>
+[jonmcalder@gmail.com]("mailto:jonmcalder@gmail.com")
+]
+
+.pull-right[
+<img src="https://image.flaticon.com/icons/svg/25/25231.svg" style="width: 25px;"/>
+[@jonmcalder](http://github.com/jonmcalder)
+
+<img src="https://image.flaticon.com/icons/png/512/8/8800.png" style="width: 25px;"/>
+[@jonmcalder](http://twitter.com/jonmcalder)
+]
+
+<br>
+<br>
+
+Slides created with [**xaringan**](https://github.com/yihui/xaringan), leveraging [xaringanthemer](https://pkg.garrickadenbuie.com/xaringanthemer/), [remark.js](https://remarkjs.com), [knitr](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
